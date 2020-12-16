@@ -1,26 +1,11 @@
-package com.example.compte_handy;
+package com.example.handy;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-
 import android.view.View;
-
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.Spinner;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
-import java.sql.Connection;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
 
 public class Login_forget extends AppCompatActivity {
 
@@ -32,7 +17,7 @@ public class Login_forget extends AppCompatActivity {
         button12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent changementActivité = new Intent(getApplicationContext(), Se_Connecter.class);
+                Intent changementActivité = new Intent(getApplicationContext(), com.example.handy.Se_Connecter.class);
                 startActivity(changementActivité);
                 finish();
             }

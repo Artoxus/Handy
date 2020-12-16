@@ -1,14 +1,11 @@
-package com.example.compte_handy;
+package com.example.handy;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Se_Connecter extends AppCompatActivity {
 
@@ -29,7 +26,7 @@ public class Se_Connecter extends AppCompatActivity {
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent changementActivité = new Intent(getApplicationContext(), MainActivity.class);
+                Intent changementActivité = new Intent(getApplicationContext(), MapsActivity.class);
                 startActivity(changementActivité);
                 finish();
             }

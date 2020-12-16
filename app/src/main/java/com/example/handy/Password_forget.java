@@ -1,4 +1,4 @@
-package com.example.compte_handy;
+package com.example.handy;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,7 +16,7 @@ public class Password_forget extends AppCompatActivity {
         button13.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent changementActivité = new Intent(getApplicationContext(), Se_Connecter.class);
+                Intent changementActivité = new Intent(getApplicationContext(), com.example.handy.Se_Connecter.class);
                 startActivity(changementActivité);
                 finish();
             }
